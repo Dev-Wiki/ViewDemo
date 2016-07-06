@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_circle_blue"
+        android:text="Text"
+        android:textColor="#FFFFFF"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/control_rl"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/translation_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Translation"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/scroll_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/control_rl"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_clear"
+            android:background="@drawable/bg_circle_red"
+            android:text="left"/>
+
+        <Button
+            android:id="@+id/btn_top"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btn_clear"
+            android:background="@drawable/bg_circle_red"
+            android:text="top"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_circle_red"/>
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_clear"
+            android:background="@drawable/bg_circle_red"
+            android:text="right"/>
+
+        <Button
+            android:id="@+id/btn_bottom"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_clear"
+            android:background="@drawable/bg_circle_red"
+            android:text="bottom"/>
+    </RelativeLayout>
+</RelativeLayout>
