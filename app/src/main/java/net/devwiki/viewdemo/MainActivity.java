@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void clickTop() {
         if (translationRb.isChecked()) {
-            textView.setTranslationX(textView.getTranslationY() - 10);
+            textView.setTranslationY(textView.getTranslationY() - 10);
         } else if (scrollRb.isChecked()) {
             textView.scrollBy(0, 10);
         } else if (paddingRb.isChecked()) {
@@ -149,14 +149,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     textView.getPaddingRight(), textView.getPaddingBottom());
         } else {
             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) textView.getLayoutParams();
-            params.leftMargin = params.topMargin - 10;
+            params.topMargin = params.topMargin - 10;
             textView.setLayoutParams(params);
         }
     }
 
     private void clickBottom() {
         if (translationRb.isChecked()) {
-            textView.setTranslationX(textView.getTranslationY() + 10);
+            textView.setTranslationY(textView.getTranslationY() + 10);
         } else if (scrollRb.isChecked()) {
             textView.scrollBy(0, -10);
         } else if (paddingRb.isChecked()) {
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     textView.getPaddingRight(), textView.getPaddingBottom());
         } else {
             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) textView.getLayoutParams();
-            params.leftMargin = params.topMargin + 10;
+            params.topMargin = params.topMargin + 10;
             textView.setLayoutParams(params);
         }
     }
