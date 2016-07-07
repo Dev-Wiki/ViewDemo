@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <size android:height="60dp"
-        android:width="60dp"/>
+    <item android:drawable="@drawable/bg_circle_blue_default"
+        android:state_pressed="false"/>
 
-    <corners android:radius="30dp"/>
-
-    <solid android:color="@color/colorPrimaryDark"/>
-
-</shape>
+    <item android:drawable="@drawable/bg_circle_blue_pressed"
+        android:state_pressed="true"/>
+</selector>

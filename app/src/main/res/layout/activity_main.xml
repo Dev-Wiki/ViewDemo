@@ -15,7 +15,7 @@
         android:padding="10dp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
         android:text="Text"
         android:textColor="#FFFFFF"/>
 
@@ -44,6 +44,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Scroll"/>
+
+        <RadioButton
+            android:id="@+id/padding_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Padding"/>
+
+        <RadioButton
+            android:id="@+id/margin_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Margin"/>
     </RadioGroup>
 
     <RelativeLayout
@@ -58,7 +70,8 @@
             android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/btn_clear"
-            android:background="@drawable/bg_circle_red"
+            android:background="@drawable/bg_circle_blue"
+            android:textColor="#FFFFFF"
             android:text="left"/>
 
         <Button
@@ -67,7 +80,8 @@
             android:layout_height="60dp"
             android:layout_centerHorizontal="true"
             android:layout_above="@+id/btn_clear"
-            android:background="@drawable/bg_circle_red"
+            android:background="@drawable/bg_circle_blue"
+            android:textColor="#FFFFFF"
             android:text="top"/>
 
         <Button
@@ -76,7 +90,8 @@
             android:layout_height="60dp"
             android:layout_centerInParent="true"
             android:layout_margin="10dp"
-            android:background="@drawable/bg_circle_red"
+            android:background="@drawable/bg_circle_blue"
+            android:textColor="#FFFFFF"
             android:text="resume"/>
         <Button
             android:id="@+id/btn_right"
@@ -84,7 +99,8 @@
             android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/btn_clear"
-            android:background="@drawable/bg_circle_red"
+            android:background="@drawable/bg_circle_blue"
+            android:textColor="#FFFFFF"
             android:text="right"/>
 
         <Button
@@ -93,7 +109,8 @@
             android:layout_height="60dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/btn_clear"
-            android:background="@drawable/bg_circle_red"
+            android:background="@drawable/bg_circle_blue"
+            android:textColor="#FFFFFF"
             android:text="bottom"/>
     </RelativeLayout>
 </RelativeLayout>
