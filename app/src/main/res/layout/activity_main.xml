@@ -13,8 +13,9 @@
         android:layout_height="100dp"
         android:layout_margin="20dp"
         android:padding="10dp"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/bg_circle_blue"
+        android:background="@color/colorPrimaryDark"
         android:text="Text"
         android:textColor="#FFFFFF"/>
 
